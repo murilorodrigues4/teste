@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.aquecimento.SecondaryController">
+   
+        <Label fx:id="primeiro" text="Cadastro de reserva" />
+         <TextField fx:id="nome" promptText="Nome" />
+         <TextField fx:id="destino" promptText="Destino" />
+         
+         <ChoiceBox fx:id="choice" /> 
+         
+          <CheckBox fx:id="certo"
+      text="Incluir seguro viagem"
+       onAction="#confirmaralgo" />
+         
+         <HBox alignment="CENTER" spacing="20.0" >
+        <Button fx:id="salvar" text="Salvar" onAction="#cadastrar" />
+         <Button fx:id="voltar" text="Voltar" onAction="#switchToPrimary" />
+    </HBox>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
